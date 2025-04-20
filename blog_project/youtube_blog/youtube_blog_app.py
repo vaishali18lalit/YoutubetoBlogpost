@@ -12,7 +12,7 @@ from PIL import Image
 from io import BytesIO
 import io
 
-openai.api_key = "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"
+openai.api_key = "" #----------------------------
 
 def process_images_and_create_mapping(keywords, save_dir, save_dir1, image_to_base64_func):
     """
@@ -285,7 +285,7 @@ def fetch_google_images(query, num_images=1):
         "q": query,                  # Search query
         "tbm": "isch",               # Image search mode
         "num": num_images,           # Number of images
-        "api_key": "d1aec6af0ee42b8a4113a670f5e27d56d308649e99257553dd9cd9562a2d078f" # Replace with your SerpAPI key
+        "api_key": "" # Replace with your SerpAPI key  --------------------------------------------------------
     }
     
     search = GoogleSearch(params)
